@@ -15,16 +15,24 @@
     <button type="button" id="searchBtn">Szukaj</button>
     <button id="settingsBtn" title="Ustawienia">⚙</button>
   </div>
-  <div id="settingsMenu">
-  <label><input type="checkbox" checked id="torrent"> Torrent</label><br>
-  <label><input type="checkbox" checked id="direct"> Direct</label>
+ <div id="settingsMenu">
+  <label><input type="checkbox" checked id="torrent">🧲 Torrent</label><br>
+  <label><input type="checkbox" checked id="direct">📥 Direct</label>
   <hr>
   <label for="sortSelect">Sortuj wg:</label>
   <select id="sortSelect">
-    <option value="title">Tytuł</option>
-    <option value="fileSize">Rozmiar</option>
-    <option value="uploadDate">Data</option>
+    <option value="uploadDate">📅 Data</option>
+    <option value="title">🔤 Tytuł</option>
+    <option value="fileSize">📦 Rozmiar</option>
   </select>
+  <hr>
+  <details>
+    
+  <summary>Wybierz źródła:</summary>
+  <div id="jsonSourceList">
+    <!-- Wyniki -->
+  </div>
+  </details>
 </div>
 
 </div>
@@ -34,7 +42,7 @@
 <div id="results"><p>Wyniki pochodzą ze źródeł podjebanych z repo <a href="https://github.com/hydralauncher/hydra">hydralauncher</a>.</p></div>
 <div id="preResults"></div>
 
-<script src="/js/fetch.js"></script>
+<script src="/js/fetch.js?v1.0.5"></script>
 
 </body>
 </html>
